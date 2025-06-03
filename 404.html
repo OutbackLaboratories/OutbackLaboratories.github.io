@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #fff;
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .glow {
+            font-size: 8rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            color: #fff;
+            text-shadow:
+                0 0 10px #00e6ff,
+                0 0 20px #00e6ff,
+                0 0 40px #00e6ff,
+                0 0 80px #00e6ff;
+            margin-bottom: 0.2em;
+            animation: flicker 2s infinite alternate;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            45% { opacity: 0.8; }
+            50% { opacity: 0.6; }
+            55% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        .message {
+            font-size: 2rem;
+            margin-bottom: 2em;
+            color: #b2fefa;
+            text-align: center;
+        }
+        .home-link {
+            display: inline-block;
+            padding: 0.75em 2em;
+            background: linear-gradient(90deg, #00e6ff 0%, #b2fefa 100%);
+            color: #232526;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 20px rgba(0,230,255,0.2);
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+        }
+        .home-link:hover {
+            background: linear-gradient(90deg, #b2fefa 0%, #00e6ff 100%);
+            color: #232526;
+            transform: scale(1.05);
+        }
+        .astronaut {
+            position: absolute;
+            bottom: 0;
+            right: 5vw;
+            width: 180px;
+            opacity: 0.7;
+            pointer-events: none;
+            filter: drop-shadow(0 0 20px #00e6ff88);
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0);}
+            50% { transform: translateY(-20px);}
+        }
+        @media (max-width: 600px) {
+            .glow { font-size: 4rem; }
+            .astronaut { width: 100px; right: 2vw; }
+            .message { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow">404</div>
+    <div class="message">Oops! The page you're looking for doesn't exist.<br>Let's get you back home.</div>
+    <a class="home-link" href="/">Go Home</a>
+    <svg class="astronaut" viewBox="0 0 200 200">
+        <ellipse cx="100" cy="160" rx="40" ry="15" fill="#00e6ff22"/>
+        <circle cx="100" cy="90" r="50" fill="#fff" stroke="#b2fefa" stroke-width="4"/>
+        <ellipse cx="100" cy="90" rx="30" ry="35" fill="#e0f7fa"/>
+        <circle cx="100" cy="90" r="18" fill="#b2fefa"/>
+        <rect x="80" y="140" width="40" height="30" rx="15" fill="#b2fefa"/>
+        <rect x="60" y="120" width="20" height="40" rx="10" fill="#b2fefa"/>
+        <rect x="120" y="120" width="20" height="40" rx="10" fill="#b2fefa"/>
+        <rect x="70" y="60" width="60" height="20" rx="10" fill="#b2fefa"/>
+        <ellipse cx="100" cy="90" rx="8" ry="12" fill="#fff" opacity="0.5"/>
+    </svg>
+</body>
+</html>
