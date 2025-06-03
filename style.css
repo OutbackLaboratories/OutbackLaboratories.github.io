@@ -1,19 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
     background-size: cover;
+    font-family: Lexend, sans-serif;
+    color: rgb(241, 241, 241);
     font: Lexend, sans-serif;
-}
-.title {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 3em;
-    margin-top: 40px;
-}
-.paragraph-container {
     background: rgb(43, 43, 43);
     margin: 40px auto 0 auto;
     padding: 24px 32px;
     text-align: left;
+}
+.title {
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    margin-top: 40px;
 }
