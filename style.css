@@ -7,16 +7,13 @@ body {
 }
 .title {
     text-align: center;
-    color: rgb(215, 215, 215);
+    color: rgb(0, 0, 0);
     font-size: 3em;
     margin-top: 40px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 .paragraph-container {
-    background: rgba(220,220,220,0.95);
-    max-width: 600px;
+    background: rgb(43, 43, 43);
     margin: 40px auto 0 auto;
     padding: 24px 32px;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    text-align: left;
 }
